@@ -1,0 +1,11 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.hover-color:hover {
+  filter: invert(0.5);
+}
+.background-white {
+  background: #fff8f8;
+  color: #020202;
+}
