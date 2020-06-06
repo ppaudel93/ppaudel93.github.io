@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-row-2 gap-15">
     <div class="grid grid-cols-4">
-      <a class="relative">
+      <a class="relative m-auto">
         <transition
           name="icon-transition"
           enter-active-class="animate__animated animate__fadeIn animate__faster"
@@ -9,13 +9,13 @@
         >
           <span
             v-show="showToolTip['node']"
-            class="absolute border-solid border-2 rounded p-1 background-white translate-node"
+            class=" text-xs absolute border-solid border-2 rounded p-1 background-white translate-node"
           >
             NodeJs
           </span>
         </transition>
         <svg
-          class="h-20 w-20 hover-color"
+          class="h-12 w-12 hover-color"
           role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@
           />
         </svg>
       </a>
-      <a class="relative">
+      <a class="relative m-auto">
         <transition
           name="icon-transition"
           enter-active-class="animate__animated animate__fadeIn animate__faster"
@@ -36,13 +36,13 @@
         >
           <span
             v-show="showToolTip['vuejs']"
-            class="absolute border-solid border-2 rounded p-1 background-white translate-vue"
+            class="text-xs absolute border-solid border-2 rounded p-1 background-white translate-vue"
           >
             VueJs
           </span>
         </transition>
         <svg
-          class="h-20 w-20 hover-color"
+          class="h-12 w-12 hover-color"
           role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +55,7 @@
           />
         </svg>
       </a>
-      <a class="relative">
+      <a class="relative m-auto">
         <transition
           name="icon-transition"
           enter-active-class="animate__animated animate__fadeIn animate__faster"
@@ -63,13 +63,13 @@
         >
           <span
             v-show="showToolTip['rails']"
-            class="absolute border-solid border-2 rounded p-1 background-white translate-rails"
+            class="text-xs absolute border-solid border-2 rounded p-1 background-white translate-rails"
           >
             Rails
           </span>
         </transition>
         <svg
-          class="h-20 w-20 hover-color"
+          class="h-12 w-12 hover-color"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -82,7 +82,7 @@
           />
         </svg>
       </a>
-      <a class="relative">
+      <a class="relative m-auto">
         <transition
           name="icon-transition"
           enter-active-class="animate__animated animate__fadeIn animate__faster"
@@ -90,13 +90,13 @@
         >
           <span
             v-show="showToolTip['html']"
-            class="absolute border-solid border-2 rounded p-1 background-white translate-html"
+            class="text-xs absolute border-solid border-2 rounded p-1 background-white translate-html"
           >
             Html5
           </span>
         </transition>
         <svg
-          class="h-20 w-20 hover-color"
+          class="h-12 w-12 hover-color"
           role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +111,7 @@
       </a>
     </div>
     <div class="grid grid-cols-4">
-      <a class="relative">
+      <a class="relative m-auto">
         <transition
           name="icon-transition"
           enter-active-class="animate__animated animate__fadeIn animate__faster"
@@ -119,13 +119,13 @@
         >
           <span
             v-show="showToolTip['git']"
-            class="absolute border-solid border-2 rounded p-1 background-white translate-git"
+            class="text-xs absolute border-solid border-2 rounded p-1 background-white translate-git"
           >
             Git
           </span>
         </transition>
         <svg
-          class="h-20 w-20 hover-color"
+          class="h-12 w-12 hover-color"
           role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -138,7 +138,7 @@
           />
         </svg>
       </a>
-      <a class="relative">
+      <a class="relative m-auto">
         <transition
           name="icon-transition"
           enter-active-class="animate__animated animate__fadeIn animate__faster"
@@ -146,13 +146,13 @@
         >
           <span
             v-show="showToolTip['postgres']"
-            class="absolute border-solid border-2 rounded p-1 background-white translate-postgres"
+            class="text-xs absolute border-solid border-2 rounded p-1 background-white translate-postgres"
           >
             PostGreSQL
           </span>
         </transition>
         <svg
-          class="h-20 w-20 hover-color"
+          class="h-12 w-12 hover-color"
           role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +165,7 @@
           />
         </svg>
       </a>
-      <a class="relative">
+      <a class="relative m-auto">
         <transition
           name="icon-transition"
           enter-active-class="animate__animated animate__fadeIn animate__faster"
@@ -173,13 +173,13 @@
         >
           <span
             v-show="showToolTip['rust']"
-            class="absolute border-solid border-2 rounded p-1 background-white translate-rust"
+            class="text-xs absolute border-solid border-2 rounded p-1 background-white translate-rust"
           >
             Rust
           </span>
         </transition>
         <svg
-          class="h-20 w-20 hover-color"
+          class="h-12 w-12 hover-color"
           role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -192,7 +192,7 @@
           />
         </svg>
       </a>
-      <a class="relative">
+      <a class="relative m-auto">
         <transition
           name="icon-transition"
           enter-active-class="animate__animated animate__fadeIn animate__faster"
@@ -200,13 +200,13 @@
         >
           <span
             v-show="showToolTip['typescript']"
-            class="absolute border-solid border-2 rounded p-1 background-white translate-typescript"
+            class="text-xs absolute border-solid border-2 rounded p-1 background-white translate-typescript"
           >
             TypeScript
           </span>
         </transition>
         <svg
-          class="h-20 w-20 hover-color"
+          class="h-12 w-12 hover-color"
           role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -244,24 +244,24 @@ export default {
   transform: translate(7%, -119%);
 }
 .translate-vue {
-  transform: translate(23%, -119%);
+  transform: translate(6%, -119%);
 }
 .translate-rails {
-  transform: translate(27%, -119%);
+  transform: translate(8%, -119%);
 }
 .translate-html {
-  transform: translate(16%, -119%);
+  transform: translate(0%, -119%);
 }
 .translate-git {
-  transform: translate(65%, -119%);
+  transform: translate(41%, -119%);
 }
 .translate-postgres {
-  transform: translate(-9%, -119%);
+  transform: translate(-14%, -119%);
 }
 .translate-rust {
-  transform: translate(37%, -119%);
+  transform: translate(16%, -119%);
 }
 .translate-typescript {
-  transform: translate(-6%, -119%);
+  transform: translate(-14%, -119%);
 }
 </style>

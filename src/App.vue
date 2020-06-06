@@ -1,8 +1,18 @@
 <template>
-  <div id="app">
-    <router-view />
+  <div id="app overflow-hidden">
+    <Main />
   </div>
 </template>
+
+<script>
+import Main from './views/Home'
+
+export default {
+  components: {
+    Main,
+  },
+}
+</script>
 
 <style lang="scss">
 #app {

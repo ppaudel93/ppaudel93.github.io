@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-4">
     <a
-      class="relative"
+      class="relative m-auto"
       href="https://www.linkedin.com/in/prayog-paudel-4aa6b4165/"
       target="_blank"
     >
@@ -12,14 +12,14 @@
       >
         <span
           v-show="showToolTip['linkedin']"
-          class="absolute border-solid border-2 rounded p-1 background-white translate-node"
+          class="text-xs absolute border-solid border-2 rounded p-1 background-white translate-linkedin"
         >
           LinkedIn
         </span>
       </transition>
       <svg
-        width="74"
-        height="74"
+        width="3rem"
+        height="3rem"
         viewBox="0 0 74 74"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,11 @@
         </g>
       </svg>
     </a>
-    <a class="relative" href="https://github.com/ppaudel93" target="_blank">
+    <a
+      class="relative m-auto"
+      href="https://github.com/ppaudel93"
+      target="_blank"
+    >
       <transition
         name="icon-transition"
         enter-active-class="animate__animated animate__fadeIn animate__faster"
@@ -46,14 +50,14 @@
       >
         <span
           v-show="showToolTip['github']"
-          class="absolute border-solid border-2 rounded p-1 background-white translate-node"
+          class="text-xs absolute border-solid border-2 rounded p-1 background-white translate-github"
         >
           Github
         </span>
       </transition>
       <svg
-        width="74"
-        height="74"
+        width="3rem"
+        height="3rem"
         viewBox="0 0 74 74"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +77,7 @@
       </svg>
     </a>
     <a
-      class="relative"
+      class="relative m-auto"
       href="https://www.instagram.com/someonetookmyname_/"
       target="_blank"
     >
@@ -84,14 +88,14 @@
       >
         <span
           v-show="showToolTip['instagram']"
-          class="absolute border-solid border-2 rounded p-1 background-white translate-node"
+          class="text-xs absolute border-solid border-2 rounded p-1 background-white translate-instagram"
         >
           Instagram
         </span>
       </transition>
       <svg
-        width="74"
-        height="74"
+        width="3rem"
+        height="3rem"
         viewBox="0 0 74 74"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +114,11 @@
         </g>
       </svg>
     </a>
-    <a class="relative" href="https://twitter.com/PRAYOG_" target="_blank">
+    <a
+      class="relative m-auto"
+      href="https://twitter.com/PRAYOG_"
+      target="_blank"
+    >
       <transition
         name="icon-transition"
         enter-active-class="animate__animated animate__fadeIn animate__faster"
@@ -118,14 +126,14 @@
       >
         <span
           v-show="showToolTip['twitter']"
-          class="absolute border-solid border-2 rounded p-1 background-white translate-node"
+          class="text-xs absolute border-solid border-2 rounded p-1 background-white translate-twitter"
         >
           Twitter
         </span>
       </transition>
       <svg
-        width="74"
-        height="74"
+        width="3rem"
+        height="3rem"
         viewBox="0 0 74 74"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -160,5 +168,17 @@ export default {
 <style>
 .pointer:hover {
   cursor: pointer;
+}
+.translate-linkedin {
+  transform: translate(-6%, -119%);
+}
+.translate-github {
+  transform: translate(-1%, -119%);
+}
+.translate-instagram {
+  transform: translate(-16%, -119%);
+}
+.translate-twitter {
+  transform: translate(-5%, -119%);
 }
 </style>
