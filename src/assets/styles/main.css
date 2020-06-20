@@ -2,10 +2,19 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+:root {
+  --primary: #fff8f8;
+  --secondary: #020202;
+}
+
 .hover-color:hover {
   filter: invert(0.5);
 }
 .background-white {
-  background: #fff8f8;
-  color: #020202;
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+.fill-primary {
+  fill: var(--primary);
 }
